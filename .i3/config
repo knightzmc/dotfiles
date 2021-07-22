@@ -65,11 +65,10 @@ bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-#bindsym Print exec --no-startup-id i3-scrot
+bindsym Print exec --no-startup-id screenshot
 #bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 #bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 #bindsym $mod+Shift+Print --release exec "notify-send 'selection will be saved to ~/tmp'; i3-scrot -s 'mv $f ~/tmp && xclip -selection clipboard -t image/png -i ~/tmp/$n'"
-bindsym Print exec "flameshot gui -r  | sftp_uploader -r"
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
