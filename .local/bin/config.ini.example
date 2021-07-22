@@ -1,0 +1,15 @@
+[server]
+host = host
+port = 2222
+
+[credentials]
+username = user
+password = pass
+
+[other]
+# for example 2006-01-02 15:04:05 (USE ONLY THIS VALUE OF DATE)
+# 2006-01-02_15-04-05
+# 15h04m05s_2006y01m02d
+name_pattern = "screen_2006-01-02_15-04-05"
+upload_directory = img/
+url_pattern = "https://img.bristermitten.me/%s"
