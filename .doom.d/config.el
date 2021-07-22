@@ -44,12 +44,15 @@
 (use-package! elcord
   :config (elcord-mode))
 
-(use-package! all-the-icons
-  :after (treemacs))
+(use-package! ormolu
+  :after (haskell-mode))
 
-(use-package! treemacs-all-the-icons
-  :after treemacs
-  :config (treemacs-load-theme "all-the-icons"))
+;;(use-package! all-the-icons
+;;  :after (treemacs))
+
+;;(use-package! treemacs-all-the-icons
+;;  :after treemacs
+;;  :config (treemacs-load-theme "all-the-icons"))
 
 (setq doom-themes-treemacs-theme "doom-colors")
 
@@ -69,3 +72,6 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(after! projectile (setq projectile-project-root-files-bottom-up (remove
+                                                                  ".git" projectile-project-root-files-bottom-up)))
