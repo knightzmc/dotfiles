@@ -34,8 +34,7 @@ async def run():
 
     while True:
         now = datetime.datetime.utcnow()
-
-        path = night_img if now > sunset else day_img
+        path = night_img if now.time() > sunset.time() else day_img
 
         subprocess.run(['feh', '--bg-scale', os.path.expanduser(path)])
         print(f'Set background to {path}')
