@@ -47,6 +47,11 @@
 (use-package! ormolu
   :after (haskell-mode))
 
+(use-package! wakatime-mode
+  :ensure t)
+
+(global-wakatime-mode)
+
 ;;(use-package! all-the-icons
 ;;  :after (treemacs))
 

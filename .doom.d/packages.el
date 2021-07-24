@@ -52,4 +52,6 @@
 
 (package! ormolu)
 
+(package! wakatime-mode)
+
 ;(package! format-all)
