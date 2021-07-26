@@ -4,6 +4,8 @@ ln -sv "$(pwd)"/.local/bin/screenshot ~/.local/bin
 ln -sv "$(pwd)"/.local/bin/suntools.py ~/.local/bin
 ln -sv "$(pwd)"/.zshrc ~
 
+ln -sv "$(pwd)"/.i3/config ~/.i3
+
 mkdir ~/.config/polybar
 ln -sv /home/alex/dotfiles/.config/polybar/* ~/.config/polybar/
 

@@ -292,11 +292,10 @@ margin-bottom = 0
 
 ; vim:ft=dosini
                       
-[module/spotify]
-type = custom/script
-format-margin = 4
-format =    <label>
-exec = playerctl metadata --format '{{artist}}: {{title}}'
-tail = true
-interval = 1
-click-left = "playerctl play-pause"
+
+
+
+
+
+
+
