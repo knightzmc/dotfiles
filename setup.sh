@@ -9,5 +9,8 @@ ln -sv "$(pwd)"/.i3/config ~/.i3
 mkdir ~/.config/polybar
 ln -sv /home/alex/dotfiles/.config/polybar/* ~/.config/polybar/
 
+mkdir ~/.config/spicetify
+ln -sv /home/alex/dotfiles/.config/spicetify/* ~/.config/spicetify
+
 mkdir ~/.doom.d
 ln -sv "$(pwd)"/.doom.d/* ~/.doom.d
